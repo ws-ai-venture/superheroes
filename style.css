@@ -26,6 +26,15 @@ body {
 .card p {
   margin: 5px 15px;
 }
+.notice {
+  margin: 12px;
+  border: 2px solid yellow;
+  background-color: #ffff00;
+  border-radius: 10px;
+  padding: 6px;
+  color: black;
+  font-size: 16px;
+}
 
 @media print {
   @page {
@@ -48,5 +57,8 @@ body {
   }
   .card h2 {
     font-size: 1.25em;
+  }
+  .notice {
+    display: none;
   }
 }
