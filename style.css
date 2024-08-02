@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  margin: 10px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card h2 {
+  margin: 10px 15px 5px;
+}
+.card p {
+  margin: 5px 15px;
+}
+
+@media print {
+  @page {
+    margin: 1.15mm; /* Adjust margins as needed */
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .card {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin: 0px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    width: 195px;
+    margin: 5px 6px;
+    border: 1px solid #ddd;
+    font-size: 0.7em;
+  }
+  .card h2 {
+    font-size: 1.25em;
+  }
+}
